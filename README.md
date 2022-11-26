@@ -1,25 +1,4 @@
-# Xcode
-
-#
-
-# gitignore contributors: remember to update Global/Xcode.gitignore, Objective-C.gitignore & Swift.gitignore
-
-## User settings
-
-xcuserdata/
-
-## compatibility with Xcode 8 and earlier (ignoring not required starting Xcode 9)
-
-_.xcscmblueprint
-_.xccheckout
-
-## compatibility with Xcode 3 and earlier (ignoring not required starting Xcode 4)
-
-build/
-DerivedData/
-_.moved-aside
-_.pbxuser
-!default.pbxuser# TestAssignment
+# TestAssignment
 
 ## Prerequisites
 
@@ -68,70 +47,11 @@ yarn global add react-native-cli
 react-native run-android
 
 ```
+## Run test case in iOS
 
-_.mode1v3
-!default.mode1v3
-_.mode2v3
-!default.mode2v3
-\*.perspectivev3
-!default.perspectivev3
+- Go to .detoxrc.json file in project's root folder.
+- In devices > simulator > device > type place your available simulator name in place of iPhone 11
+- Go to your project's root folder and run `detox build -c ios.sim.release`
+- after build succeed run `detox test configuration ios.sim.release`
 
-## Obj-C/Swift specific
-
-\*.hmap
-
-## App packaging
-
-_.ipa
-_.dSYM.zip
-\*.dSYM
-
-## Playgrounds
-
-timeline.xctimeline
-playground.xcworkspace
-
-# Swift Package Manager
-
-#
-
-# Add this line if you want to avoid checking in source code from Swift Package Manager dependencies.
-
-# Packages/
-
-# Package.pins
-
-# Package.resolved
-
-# \*.xcodeproj
-
-#
-
-# Xcode automatically generates this directory with a .xcworkspacedata file and xcuserdata
-
-# hence it is not needed unless you have added a package configuration file to your project
-
-# .swiftpm
-
-.build/
-
-# CocoaPods
-
-#
-
-# We recommend against adding the Pods directory to your .gitignore. However
-
-# you should judge for yourself, the pros and cons are mentioned at:
-
-# https://guides.cocoapods.org/using/using-cocoapods.html#should-i-check-the-pods-directory-into-source-control
-
-#
-
-ios/Pods/
-
-#
-
-# Add this line if you want to avoid checking in source code from the Xcode workspace
-
-# \*.xcworkspace
 ```
